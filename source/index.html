@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body class="page__body">
+  <body>
     <header class="header">
       <nav class="nav">
         <a class="nav__logo">
@@ -106,68 +106,70 @@
 
       <section class="price">
         <h2 class="visually-hidden">Тарифы</h2>
-        <table class="price__table tariffs">
-          <tr>
-            <th class="tariffs__header">
-              <h3 class="tariffs__title">База</h3>
-              <p class="tariffs__cost">1,99 USD</p>
-            </th>
-            <th class="tariffs__header tariffs__header--hit">
-              <h3 class="tariffs__title">Стандарт</h3>
-              <p class="tariffs__cost">3,99 USD</p>
-            </th>
-            <th class="tariffs__header">
-              <h3 class="tariffs__title">Анлим</h3>
-              <p class="tariffs__cost">9,99 USD</p>
-            </th>
-          </tr>
-          <tr>
-            <td class="tariffs__function">
-              Розовый фильтр
-            </td>
-            <td class="tariffs__include tariffs__include--on">
-              <span class="tariff__text">Розовый фильтр</span>
-            </td>
-            <td class="tariffs__include tariffs__include--on">
-              <span class="tariff__text">Розовый фильтр</span>
-            </td>
-            <td class="tariffs__include tariffs__include--on">
-              <span class="tariff__text">Розовый фильтр</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="tariffs__function">
-              Смайлики
-            </td>
-            <td class="tariffs__include tariffs__include--off">
-              <span class="tariff__text">Смайлики</span>
-            </td>
-            <td class="tariffs__include tariffs__include--on">
-              <span class="tariff__text">Смайлики</span>
-            </td>
-            <td class="tariffs__include tariffs__include--on">
-              <span class="tariff__text">Смайлики</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="tariffs__function">
-              Комментарии
-            </td>
-            <td class="tariffs__include tariffs__include--off">
-              <span class="tariff__text">Комментарии</span>
-            </td>
-            <td class="tariffs__include tariffs__include--off">
-              <span class="tariff__text">Комментарии</span>
-            </td>
-            <td class="tariffs__include tariffs__include--on">
-              <span class="tariff__text">Комментарии</span>
-            </td>
-          </tr>
-        </table>
-        <div class="slider__controls">
-          <button class="slider__button" aria-label="Первый слайд"></button>
-          <button class="slider__button slider__button--current" aria-label="Второй слайд"></button>
-          <button class="slider__button" aria-label="Третий слайд"></button>
+        <div class="slider">
+          <table class="price__table tariffs">
+            <tr>
+              <th class="tariffs__header">
+                <h3 class="tariffs__title">База</h3>
+                <p class="tariffs__cost">1,99 USD</p>
+              </th>
+              <th class="tariffs__header tariffs__header--hit">
+                <h3 class="tariffs__title">Стандарт</h3>
+                <p class="tariffs__cost">3,99 USD</p>
+              </th>
+              <th class="tariffs__header">
+                <h3 class="tariffs__title">Анлим</h3>
+                <p class="tariffs__cost">9,99 USD</p>
+              </th>
+            </tr>
+            <tr>
+              <td class="tariffs__function">
+                Розовый фильтр
+              </td>
+              <td class="tariffs__include tariffs__include--on">
+                <span class="tariffs__text">Розовый фильтр</span>
+              </td>
+              <td class="tariffs__include tariffs__include--on">
+                <span class="tariffs__text">Розовый фильтр</span>
+              </td>
+              <td class="tariffs__include tariffs__include--on">
+                <span class="tariffs__text">Розовый фильтр</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="tariffs__function">
+                Смайлики
+              </td>
+              <td class="tariffs__include tariffs__include--off">
+                <span class="tariffs__text">Смайлики</span>
+              </td>
+              <td class="tariffs__include tariffs__include--on">
+                <span class="tariffs__text">Смайлики</span>
+              </td>
+              <td class="tariffs__include tariffs__include--on">
+                <span class="tariffs__text">Смайлики</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="tariffs__function">
+                Комментарии
+              </td>
+              <td class="tariffs__include tariffs__include--off">
+                <span class="tariffs__text">Комментарии</span>
+              </td>
+              <td class="tariffs__include tariffs__include--off">
+                <span class="tariffs__text">Комментарии</span>
+              </td>
+              <td class="tariffs__include tariffs__include--on">
+                <span class="tariffs__text">Комментарии</span>
+              </td>
+            </tr>
+          </table>
+          <div class="slider__controls">
+            <button class="slider__button" aria-label="Первый слайд"></button>
+            <button class="slider__button slider__button--current" aria-label="Второй слайд"></button>
+            <button class="slider__button" aria-label="Третий слайд"></button>
+          </div>
         </div>
       </section>
 
