@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a class="nav__logo">
+          <img src="img/logo.svg" width="74" height="23" alt="Pink">
+        </a>
+        <button class="nav__toggle" aria-label="Меню"></button>
+        <ul class="nav__menu menu">
+          <li class="menu__item">
+            <a class="menu__link" href="">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Фотографии</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Конкурс</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="contest">
+        <h1 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <p class="contest__description">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          <span>Пожалуйста, заполните форму ниже:</span>
+        </p>
+        <form class="contest__form form" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="form__fieldset">
+            <label class="form__label" for="form-surname">Фамилия:</label>
+            <input class="form__input" id="form-surname" type="text" placeholder="Укажите фамилию *">
+            <label class="form__label" for="form-name">Имя:</label>
+            <input class="form__input" id="form-name" type="text" placeholder="Введите ваше имя *">
+            <label class="form__label" for="form-patronymic">Отчество:</label>
+            <input class="form__input" id="form-patronymic" type="text" placeholder="Ну и отчество тоже">
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Ваши безбашенные
+              достижения в путешествии</legend>
+              <label class="form__label">
+                <input class="visually-hidden" name="shark" type="checkbox" checked>
+                <span class="checkbox-indicator"></span>
+                Сделал селфи с акулой
+              </label>
+              <label class="form__label">
+                <input class="visually-hidden" name="bitch" type="checkbox" checked>
+                <span class="checkbox-indicator"></span>
+                Обгорел на пляже
+              </label>
+              <label class="form__label">
+                <input class="visually-hidden" name="chack" type="checkbox">
+                <span class="checkbox-indicator"></span>
+                Видел Чака Норриса
+              </label>
+              <label class="form__label">
+                <input class="visually-hidden" name="souvenir" type="checkbox">
+                <span class="checkbox-indicator"></span>
+                Накупил сувениров
+              </label>
+              <label class="form__label">
+                <input class="visually-hidden" name="tower" type="checkbox" checked>
+                <span class="checkbox-indicator"></span>
+                Удержал башню
+              </label>
+              <label class="form__label">
+                <input class="visually-hidden" name="hotel" type="checkbox">
+                <span class="checkbox-indicator"></span>
+                Разгромил отель
+              </label>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">контактная информация</legend>
+            <label class="form__label" for="form-phone">Номер телефона</label>
+            <input class="form__input" id="form-phone" type="phone" placeholder="Номер, пожалуйста">
+            <label class="form__label" for="form-email">Адрес почты</label>
+            <input class="form__input" id="form-email" type="email" placeholder="Введите почту *">
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">С каким приложением
+              путешествовали?</legend>
+              <label class="form__label">
+                <input class="visually-hidden" name="radio" type="radio" checked>
+                <span class="radio-indicator"></span>
+                Pink для iOS
+              </label>
+              <label class="form__label">
+                <input class="visually-hidden" name="radio" type="radio">
+                <span class="radio-indicator"></span>
+                Pink на Android
+              </label>
+              <label class="form__label">
+                <input class="visually-hidden" name="radio" type="radio">
+                <span class="radio-indicator"></span>
+                Windows Phone
+              </label>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Опишите свои эмоции</legend>
+            <textarea class="form__description" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+
+          <button class="form__button" type="submit">Отправить форму</button>
+          <p class="form__required"><span class="form__star">*</span> — обязательные поля</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="footer__logo" href="">
+        <img src="img/logo-footer.svg" alt="Pink">
+      </a>
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link" href="" aria-label="twitter"></a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="" aria-label="facebook"></a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="" aria-label="youtube"></a>
+        </li>
+      </ul>
+      <p class="copyrigth">
+        Разработано
+        <a class="copyrigth" href="">
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
