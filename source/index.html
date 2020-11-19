@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
@@ -33,8 +34,8 @@
       <section class="hero">
         <h2 class="visually-hidden">Скачайте приложение Pink для вашего устройства</h2>
         <p class="hero__tagline">Взгляните на жизнь иначе!</p>
-        <a class="hero__button button" href="">Скачать приложение</a>
         <div class="hero__download download">
+          <a class="download__button button" href="">Скачать приложение</a>
           <ul class="download__list download-systems">
             <li class="download-systems__item">
               <a class="download-systems__link" href="">
@@ -57,9 +58,11 @@
       </section>
 
       <section class="advantages">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <p class="advantages__title">Устали от серости мегаполиса?</p>
-        <p class="advantages__title">Нам есть, что вам <br>предложить!</p>
+        <div class="advantages__header">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <p class="advantages__title">Устали от серости мегаполиса?</p>
+          <p class="advantages__title">Нам есть, что вам <br>предложить!</p>
+        </div>
         <ul class="advantages__list advantages-list">
           <li class="advantages-list__item advantages-list__item--mood">
             <h3 class="advantages-list__title">Поднимает настроение</h3>
@@ -109,10 +112,7 @@
         <h2 class="visually-hidden">Тарифы</h2>
         <div class="slider">
           <table class="price__table tariffs">
-            <tr>
-              <th class="tariffs__header">
-
-              </th>
+            <tr class="tariffs__row">
               <th class="tariffs__header">
                 <p class="tariffs__title">База</p>
                 <p class="tariffs__cost">1,99 USD</p>
@@ -126,7 +126,7 @@
                 <p class="tariffs__cost">9,99 USD</p>
               </th>
             </tr>
-            <tr>
+            <tr class="tariffs__row">
               <td class="tariffs__function">
                 Розовый фильтр
               </td>
@@ -140,7 +140,7 @@
                 <span class="tariffs__text">Розовый фильтр</span>
               </td>
             </tr>
-            <tr>
+            <tr class="tariffs__row">
               <td class="tariffs__function">
                 Смайлики
               </td>
@@ -154,7 +154,7 @@
                 <span class="tariffs__text">Смайлики</span>
               </td>
             </tr>
-            <tr>
+            <tr class="tariffs__row">
               <td class="tariffs__function">
                 Комментарии
               </td>
@@ -179,19 +179,19 @@
 
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+        <p class="contacts__headline">Остались вопросы? Свяжитесь с нами!</p>
         <ul class="contacts__list">
-          <li class="contacts__item contact">
-            <h3 class="contact__title">Звоните:</h3>
-            <a class="contact__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          <li class="contacts__item">
+            <h3 class="contacts__title">Звоните:</h3>
+            <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </li>
-          <li class="contacts__item contact">
-            <h3 class="contact__title">Пишите:</h3>
-            <a class="contact__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <li class="contacts__item">
+            <h3 class="contacts__title">Пишите:</h3>
+            <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
-          <li class="contacts__item contact">
-            <h3 class="contact__title">Приезжайте в гости:</h3>
-            <address class="contact__address">
+          <li class="contacts__item">
+            <h3 class="contacts__title">Приезжайте в гости:</h3>
+            <address class="contacts__address">
               ул. Большая Конюшенная, 19/8
             </address>
           </li>
@@ -219,9 +219,9 @@
           <a class="socials__link" href="" aria-label="youtube"></a>
         </li>
       </ul>
-      <p class="copyrigth">
+      <p class="footer__copyrigth">
         Разработано
-        <a class="copyrigth" href="">
+        <a href="">
           <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
         </a>
       </p>

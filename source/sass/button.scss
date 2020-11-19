@@ -1,0 +1,17 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 55px;
+  color: $basic-white;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  text-align: center;
+  border: 3px solid $basic-white;
+  border-radius: 55px;
+  cursor: pointer;
+}

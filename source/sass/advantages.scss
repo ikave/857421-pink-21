@@ -1,0 +1,35 @@
+.advantages {
+  background-color: $basic-gray;
+}
+
+.advantages__header {
+  padding: 40px 0;
+  background-color: $basic-white;
+}
+
+.advantages__title {
+  margin: 0;
+  color: $main-color;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages-list__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.advantages-list__description {
+  margin: 0;
+  color: $main-color;
+  line-height: 24px;
+}
