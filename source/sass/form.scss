@@ -1,0 +1,18 @@
+.form__fieldset:nth-child(2n) {
+  background-color: $basic-gray;
+}
+
+.form__label {
+  color: $accent-color;
+  text-transform: uppercase;
+}
+
+.form__input {
+  color: $main-color;
+  font-size: 18px;
+}
+
+.form__button {
+  color: $basic-white;
+  background-color: $success-color;
+}
