@@ -1,0 +1,14 @@
+.preview {
+  background-color: $basic-gray;
+}
+
+.preview__button {
+  color: $accent-color;
+  border-color: $accent-color;
+
+  &:disabled {
+    color: $main-color;
+    border-color: $main-color;
+    opacity: 0.1;
+  }
+}

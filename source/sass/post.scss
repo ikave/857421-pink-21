@@ -1,0 +1,23 @@
+.post__comment {
+  padding: 25px 10px 25px 17px;
+  background-color: $basic-gray;
+  margin: 0;
+  color: $main-color;
+  line-height: 24px;
+}
+
+.post__author {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.post__time {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.post__likes {
+  color: $accent-color;
+  font-size: 12px;
+  text-transform: uppercase;
+}

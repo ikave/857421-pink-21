@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header class="header">
@@ -13,22 +14,22 @@
         <button class="nav__toggle" aria-label="Меню"></button>
         <ul class="nav__menu menu">
           <li class="menu__item">
-            <a class="menu__link" href="">Главная</a>
+            <a class="menu__link" href="index.html">Главная</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="">Фотографии</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="">Конкурс</a>
+            <a class="menu__link" href="form.html">Конкурс</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="">HTML Academy</a>
           </li>
         </ul>
       </nav>
+      <h1 class="header__title">Фотографии пользователей</h1>
     </header>
     <main>
-      <h1>Фотографии пользователей</h1>
       <section class="catalog">
         <h2 class="catalog__title">Взгляните на фотографии, которые выкладывают пользователи!
           Видите, как не хватает ваших?</h2>
@@ -142,8 +143,8 @@
               <button class="filter__pin" type="button"></button>
             </p>
           </div>
-          <button class="button" type="submit">Запостить</button>
-          <button class="button" type="reset" disabled>Отмена</button>
+          <button class="button preview__button" type="submit">Запостить</button>
+          <button class="button preview__button" type="reset" disabled>Отмена</button>
         </form>
       </section>
     </main>
