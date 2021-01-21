@@ -1,0 +1,93 @@
+.trick {
+  position: relative;
+  padding-top: 54px;
+  padding-bottom: 20px;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -9px;
+    padding-top: 0;
+    padding-bottom: 68px;
+    background-color: $basic-gray;
+  }
+}
+
+.trick__wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    width: 238px;
+    height: 276px;
+    background-image: url("../../img/clock.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 298px;
+      height: 345px;
+    }
+  }
+}
+
+.trick__block {
+  display: flex;
+  flex-direction: column;
+  max-width: 310px;
+  margin-left: auto;
+  padding-top: 17px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 534px;
+    padding-top: 48px;
+    margin-left: 73px;
+  }
+}
+
+.trick__title {
+  margin: 0;
+  margin-bottom: 12px;
+  padding-right: 101px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.trick__description {
+  margin: 0;
+  margin-bottom: 5px;
+  padding-right: 10px;
+  color: $main-color;
+  line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+    padding-right: 0;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.trick__link {
+  color: $accent-color;
+  line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

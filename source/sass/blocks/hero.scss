@@ -1,0 +1,76 @@
+.hero {
+  position: relative;
+  padding-top: 23px;
+  overflow-x: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 94px;
+    padding-bottom: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 60px;
+    padding-top: 99px;
+    padding-bottom: 94px;
+  }
+}
+
+.hero__tagline {
+  max-width: 245px;
+  margin: 0 auto 30px;
+  color: $basic-white;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 300px;
+    margin-left: 0;
+    margin-bottom: 2px;
+    margin-right: 0;
+    padding-left: 40px;
+    font-size: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.hero__image {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  @media (min-width: $desktop-width) {
+    right: -66px;
+  }
+}
+
+.hero__download {
+  display: flex;
+  justify-content: center;
+  padding: 28px 20px 31px;
+  background-color: $main-dark-color;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    justify-content: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 34px;
+  }
+
+}

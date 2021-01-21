@@ -7,44 +7,52 @@
 // Basic
 @import "./scaffolding";
 
-// Navigation
-@import "./nav";
 
-// Menu
-@import "./menu";
+// Blocks
 
-// Hero
-@import "./hero";
+// Header
+@import "./blocks/header";
+@import "./blocks/nav";
+@import "./blocks/menu";
+@import "./blocks/hero";
+
+// Main
+@import "./blocks/advantages-list";
+@import "./blocks/slider";
+@import "./blocks/map";
+@import "./blocks/reviews";
+@import "./blocks/link";
 
 // Button
-@import "./button";
+@import "./blocks/button";
 
 // Download
-@import "./download";
+@import "./blocks/download";
 
 // Advantages
-@import "./advantages";
+@import "./blocks/advantages";
 
 // Trick
-@import "./trick";
+@import "./blocks/trick";
 
 // Review
-@import "./review";
+@import "./blocks/review";
 
 // Price
-@import "./price";
+@import "./blocks/price";
 
 // Tariffs
-@import "./tariffs";
+@import "./blocks/tariffs";
 
 // Contacts
-@import "./contacts";
+@import "./blocks/contacts";
 
 // Footer
-@import "./footer";
+@import "./blocks/footer";
+@import "./blocks/socials";
 
 // Contest
-@import "./contest";
+@import "./blocks/contest";
 
 // Form
-@import "./form";
+@import "./blocks/form";

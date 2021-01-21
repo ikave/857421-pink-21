@@ -1,0 +1,14 @@
+.link {
+  color: $accent-color;
+  
+  &[href]:hover,
+  &[href]:focus {
+    color: $main-color;
+    text-decoration: underline;
+  }
+
+  &[href]:active {
+    color: rgba($main-color, 0.3);
+    text-decoration: none;
+  }
+}

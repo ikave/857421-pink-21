@@ -14,4 +14,19 @@
   border: 3px solid $basic-white;
   border-radius: 55px;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background-color: $basic-white;
+  }
+
+  &:active {
+    color: rgba($accent-color, 0.3);
+    background-color: $basic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+  }
 }
