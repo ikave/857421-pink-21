@@ -39,15 +39,15 @@
       height: 301px;
       background-repeat: no-repeat;
     }
-  
+
     &--mood::before {
       background-image: url("../../img/advantage-mood.png");
     }
-  
+
     &--world::before {
       background-image: url("../../img/advantage-world.png");
     }
-  
+
     &--friends::before {
       background-image: url("../../img/advantage-friend.png");
     }
