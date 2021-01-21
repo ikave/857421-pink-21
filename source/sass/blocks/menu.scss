@@ -62,7 +62,7 @@
     &:active {
       color: rgba($basic-white, 0.3);
     }
-    
+
     &--active::before {
       content: "";
       position: absolute;
