@@ -2,7 +2,15 @@
 $basic-black: #000000;
 $basic-white: #ffffff;
 $basic-gray: #f2f2f2;
+$basic-gray-dark: #e5e5e5;
 $main-color: #283645;
 $main-dark-color: #1d2631;
 $accent-color: #d22856;
 $success-color: #2aab6d;
+
+// media
+$mobile-width: 320px;
+$mobile-width-only: 659px;
+$tablet-width: 660px;
+$tablet-width-only: 1059px;
+$desktop-width: 1060px; // padding 60
