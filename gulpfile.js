@@ -19,8 +19,10 @@ const sync = require("browser-sync").create();
 const html = () => {
   return gulp.src("source/*.html")
   .pipe(htmlmin({collapseWhitespace: true}))
-  .pipe(gulp.dest("build"))
+  .pipe(gulp.dest("build"));
 }
+
+exports.html = html;
 
 // Styles
 
@@ -129,7 +131,7 @@ const sprite = () => {
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/js/scripts.js", gulp.series("scripts"));
-  gulp.watch("source/*.html", gulp.series(html, sync.reload));
+  gulp.watch("source/*.html", gulp.series("html")).on("change", sync.reload);
 }
 
 // Build

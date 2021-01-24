@@ -1,0 +1,22 @@
+.logo {
+  display: none;
+  fill: $basic-white;
+
+  @media (max-width: $mobile-width-only) {
+    &--mobile {
+      display: block;
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    &--tablet {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--desktop {
+      display: block;
+    }
+  }
+}

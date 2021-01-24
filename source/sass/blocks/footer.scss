@@ -22,12 +22,41 @@
 }
 
 .footer__logo {
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+
+  &[href]:hover,
+  &[href]:focus {
+    &-image {
+      fill: $accent-color;
+    }
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+
+  &-image {
+    display: none;
+    fill: $main-color;
+
+    @media (max-width: $tablet-width-only) {
+      &--mobile {
+        display: inline-block;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &--desktop {
+        display: block;
+      }
+    }
   }
 }
 
@@ -53,4 +82,20 @@
 .footer__copyright-link {
   margin-top: 7px;
   margin-left: 15px;
+
+  &:hover,
+  &:focus {
+    & .footer__copyright-logo {
+      fill: $main-color;
+    }
+  }
+
+  &:active {
+    fill: $main-color;
+    opacity: 0.3;
+  }
+}
+
+.footer__copyright-logo {
+  fill: $accent-color;
 }

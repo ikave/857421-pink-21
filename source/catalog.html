@@ -4,21 +4,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="header">
       <nav class="nav">
         <div class="nav__wrapper">
           <div class="nav__toggle-wrapper">
-            <a class="nav__logo">
-              <picture>
-                <source media="(min-width: 1060px)" srcset="img/pink-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/pink-tablet.svg">
-                <img class="nav__logo-image" src="img/pink.svg" width="74" height="23" alt="Pink">
-              </picture>
+            <a class="nav__logo" href="index.html">
+              <svg class="logo logo--desktop" width="147" height="40" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#logo-desktop"></use>
+              </svg>
+              <svg class="logo logo--tablet" width="145" height="40" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#logo-tablet"></use>
+              </svg>
+              <svg class="logo logo--mobile" width="74" height="23" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#logo-mobile"></use>
+              </svg>
             </a>
-            <button class="nav__toggle" aria-label="Меню"></button>
+            <button class="nav__toggle nav__toggle--closed" aria-label="Меню">
+              <svg class="nav__toggle-image nav__toggle-image--closed" width="50" height="24" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#open-menu-btn"></use>
+              </svg>
+              <svg class="nav__toggle-image nav__toggle-image--opened" width="23" height="23" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#close-menu-btn"></use>
+              </svg>
+            </button>
           </div>
           <ul class="nav__menu menu">
             <li class="menu__item">
@@ -245,6 +256,6 @@
         </p>
       </div>
     </footer>
-    <script src="./js/scripts.js"></script>
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>
