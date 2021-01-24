@@ -19,7 +19,7 @@ const sync = require("browser-sync").create();
 const html = () => {
   return gulp.src("source/*.html")
   .pipe(htmlmin({collapseWhitespace: true}))
-  .pipe(gulp.dest("build/"))
+  .pipe(gulp.dest("build"))
 }
 
 // Styles
@@ -35,7 +35,7 @@ const styles = () => {
     ]))
     .pipe(sourcemap.write("."))
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css/"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
@@ -47,7 +47,7 @@ const scripts = () => {
   return gulp.src("source/js/scripts.js")
   .pipe(uglify())
   .pipe(rename("scripts.min.js"))
-  .pipe(gulp.dest("build/js/"))
+  .pipe(gulp.dest("build/js"))
   .pipe(sync.stream());
 }
 
@@ -121,7 +121,7 @@ const sprite = () => {
   return gulp.src("source/img/**/*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img/"))
+    .pipe(gulp.dest("build/img"))
 }
 
 // Watcher
