@@ -6,171 +6,245 @@
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body>
+  <body class="page__body">
     <header class="header">
       <nav class="nav">
-        <a class="nav__logo" href="index.html">
-          <img src="img/logo.svg" width="74" height="23" alt="Pink">
-        </a>
-        <button class="nav__toggle" aria-label="Меню"></button>
-        <ul class="nav__menu menu">
-          <li class="menu__item">
-            <a class="menu__link" href="">Главная</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="">Фотографии</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="">Конкурс</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="">HTML Academy</a>
-          </li>
-        </ul>
+        <div class="nav__wrapper">
+          <div class="nav__toggle-wrapper">
+            <a class="nav__logo">
+              <picture>
+                <source media="(min-width: 1060px)" srcset="img/pink-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/pink-tablet.svg">
+                <img class="nav__logo-image" src="img/pink.svg" width="74" height="23" alt="Pink">
+              </picture>
+            </a>
+            <button class="nav__toggle" aria-label="Меню"></button>
+          </div>
+          <ul class="nav__menu menu">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--active">Фотографии</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
+      <div class="header__wrapper">
+        <h1 class="header__title">Фотографии<br> пользователей</h1>
+      </div>
     </header>
     <main>
-      <h1>Фотографии пользователей</h1>
+
       <section class="catalog">
-        <h2 class="catalog__title">Взгляните на фотографии, которые выкладывают пользователи!
-          Видите, как не хватает ваших?</h2>
-          <ul class="catalog__list posts">
-            <li class="posts__item post post--day">
-              <img class="post__img" src="img/post.jpg" alt="">
-              <blockquote class="post__comment">
+        <h2 class="visually-hidden">Список фотографий пользователей</h2>
+        <p class="catalog__title">Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?</p>
+          <div class="post post--day">
+            <a href="">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg">
+                <img class="post__img post__img--day" src="img/panorama.jpg" alt="">
+              </picture>
+            </a>
+            <div class="container">
+              <blockquote class="post__comment post__comment--day">
                 <cite class="post__author">Анна <span class="post__time">(5 минут назад)</span></cite>
                 <p class="post__description">
                   Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
                 </p>
                 <p class="post__likes">Нравится: <span class="post__likes-count">215</span></p>
               </blockquote>
-            </li>
-            <li class="posts__item post">
-              <img class="post__img" src="img/post.jpg" alt="">
-              <blockquote class="post__comment">
-                <cite class="post__author">Левон <span class="post__time">(5 часов назад)</span></cite>
-                <p class="post__description">
-                  Вчера он на луну летал, сегодня в руки к нам попал.
-                </p>
-                <p class="post__likes">Нравится: <span class="post__likes-count">356</span></p>
-              </blockquote>
-            </li>
-            <li class="posts__item post">
-              <img class="post__img" src="img/post.jpg" alt="">
-              <blockquote class="post__comment">
-                <cite class="post__author">Антон <span class="post__time">(12 часов назад)</span></cite>
-                <p class="post__description">
-                  Соседи будут рады!
-                </p>
-                <p class="post__likes">Нравится: <span class="post__likes-count">666</span></p>
-              </blockquote>
-            </li>
-            <li class="posts__item post">
-              <img class="post__img" src="img/post.jpg" alt="">
-              <blockquote class="post__comment">
-                <cite class="post__author">Борис <span class="post__time">(20 часов назад)</span></cite>
-                <p class="post__description">
-                  Здесь могла быть ваша цитата о высоком и вечном.
-                </p>
-                <p class="post__likes">Нравится: <span class="post__likes-count">215</span></p>
-              </blockquote>
-            </li>
-            <li class="posts__item post">
-              <img class="post__img" src="img/post.jpg" alt="">
-              <blockquote class="post__comment">
-                <cite class="post__author">Сергей <span class="post__time">(25 часов назад)</span></cite>
-                <p class="post__description">
-                  Самая кубанская в мире!
-                </p>
-                <p class="post__likes">Нравится: <span class="post__likes-count">4</span></p>
-              </blockquote>
-            </li>
-            <li class="posts__item post">
-              <img class="post__img" src="img/post.jpg" alt="">
-              <blockquote class="post__comment">
-                <cite class="post__author">Максим <span class="post__time">(40 часов назад)</span></cite>
-                <p class="post__description">
-                  Где снег-то?
-                </p>
-                <p class="post__likes">Нравится: <span class="post__likes-count">150</span></p>
-              </blockquote>
-            </li>
-            <li class="posts__item post">
-              <img class="post__img" src="img/post.jpg" alt="">
-              <blockquote class="post__comment">
-                <cite class="post__author">Надежда <span class="post__time">(45 часов назад)</span></cite>
-                <p class="post__description">
-                  Всем GM и взаимные лайки!
-                </p>
-                <p class="post__likes">Нравится: <span class="post__likes-count">2560</span></p>
-              </blockquote>
-            </li>
-          </ul>
-          <p class="catalog__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+            </div>
+          </div>
+          <div class="container">
+            <ul class="posts">
+              <li class="posts__item post">
+                <a href="">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg">
+                    <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg">
+                    <img class="post__img" src="img/photo-1-mobile.jpg" alt="">
+                  </picture>
+                </a>
+                <blockquote class="post__comment">
+                  <cite class="post__author">Левон <span class="post__time">(5 часов назад)</span></cite>
+                  <p class="post__description">
+                    Вчера он на луну летал, сегодня в руки к нам попал.
+                  </p>
+                  <p class="post__likes">Нравится: <span class="post__likes-count">356</span></p>
+                </blockquote>
+              </li>
+              <li class="posts__item post">
+                <a href="">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg">
+                    <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg">
+                    <img class="post__img" src="img/photo-2-mobile.jpg" alt="">
+                  </picture>
+                </a>
+                <blockquote class="post__comment">
+                  <cite class="post__author">Антон <span class="post__time">(12 часов назад)</span></cite>
+                  <p class="post__description">
+                    Соседи будут рады!
+                  </p>
+                  <p class="post__likes">Нравится: <span class="post__likes-count">666</span></p>
+                </blockquote>
+              </li>
+              <li class="posts__item post">
+                <a href="">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg">
+                    <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg">
+                    <img class="post__img" src="img/photo-3-mobile.jpg" alt="">
+                  </picture>
+                </a>
+                <blockquote class="post__comment">
+                  <cite class="post__author">Борис <span class="post__time">(20 часов назад)</span></cite>
+                  <p class="post__description">
+                    Здесь могла быть ваша цитата о высоком и вечном.
+                  </p>
+                  <p class="post__likes">Нравится: <span class="post__likes-count">215</span></p>
+                </blockquote>
+              </li>
+              <li class="posts__item post">
+                <a href="">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg">
+                    <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg">
+                    <img class="post__img" src="img/photo-4-mobile.jpg" alt="">
+                  </picture>
+                </a>
+                <blockquote class="post__comment">
+                  <cite class="post__author">Сергей <span class="post__time">(25 часов назад)</span></cite>
+                  <p class="post__description">
+                    Самая кубанская в мире!
+                  </p>
+                  <p class="post__likes">Нравится: <span class="post__likes-count">4</span></p>
+                </blockquote>
+              </li>
+              <li class="posts__item post">
+                <a href="">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg">
+                    <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg">
+                    <img class="post__img" src="img/photo-5-mobile.jpg" alt="">
+                  </picture>
+                </a>
+                <blockquote class="post__comment">
+                  <cite class="post__author">Максим <span class="post__time">(40 часов назад)</span></cite>
+                  <p class="post__description">
+                    Где снег-то?
+                  </p>
+                  <p class="post__likes">Нравится: <span class="post__likes-count">150</span></p>
+                </blockquote>
+              </li>
+              <li class="posts__item post">
+                <a href="">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg">
+                    <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg">
+                    <img class="post__img" src="img/photo-6-mobile.jpg" alt="">
+                  </picture>
+                </a>
+                <blockquote class="post__comment">
+                  <cite class="post__author">Надежда <span class="post__time">(45 часов назад)</span></cite>
+                  <p class="post__description">
+                    Всем GM и взаимные лайки!
+                  </p>
+                  <p class="post__likes">Нравится: <span class="post__likes-count">2560</span></p>
+                </blockquote>
+              </li>
+            </ul>
+          </div>
+          <p class="catalog__text">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
       </section>
 
       <section class="upload">
-        <h2 class="visually-hidden">Загрузить фотографию</h2>
-        <form class="upload__form preview" action="https://echo.htmlacademy.ru" method="POST">
-          <img class="preview__img" src="img/photo.jpg" alt="">
-          <div class="filter">
-            <ul class="filter__list">
-              <li class="filter__item">
-                <label class="filter__label filter__label--cut">
-                  <input class="visually-hidden" type="radio" name="filter" checked>
-                </label>
-                <p class="filter__bar">
-                  <button class="filter__pin" type="button"></button>
-                </p>
-              </li>
-              <li class="filter__item">
-                <label class="filter__label filter__label--fill">
-                  <input class="visually-hidden" type="radio" name="filter">
-                </label>
-                <p class="filter__bar">
-                  <button class="filter__pin" type="button"></button>
-                </p>
-              </li>
-              <li class="filter__item">
-                <label class="filter__label filter__label--contrast">
-                  <input class="visually-hidden" type="radio" name="filter">
-                </label>
-                <p class="filter__bar">
-                  <button class="filter__pin" type="button"></button>
-                </p>
-              </li>
-            </ul>
-            <p class="filter__bar">
-              <button class="filter__pin" type="button"></button>
-            </p>
-          </div>
-          <button class="button" type="submit">Запостить</button>
-          <button class="button" type="reset" disabled>Отмена</button>
-        </form>
-      </section>
+          <h2 class="visually-hidden">Загрузить фотографию</h2>
+          <form class="upload__form preview" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="preview__image-wrapper">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/photo-7-tablet.jpg">
+                <img class="preview__img" src="img/photo-7-mobile.jpg" alt="">
+              </picture>
+            </div>
+            <div class="preview__filter">
+              <div class="filter">
+                <ul class="filter__list">
+                  <li class="filter__item">
+                    <label class="filter__label filter__label--cut">
+                      <input class="visually-hidden" type="radio" name="filter" checked>
+                      <img src="img/crop.svg" width="44" height="44" alt="">
+                    </label>
+                    <p class="filter__bar filter__bar--active">
+                      <button class="filter__pin filter__pin--cut" type="button"></button>
+                    </p>
+                  </li>
+                  <li class="filter__item">
+                    <label class="filter__label filter__label--fill">
+                      <input class="visually-hidden" type="radio" name="filter">
+                      <img src="img/fill.svg" width="48" height="43" alt="">
+                    </label>
+                    <p class="filter__bar">
+                      <button class="filter__pin filter__pin--fill" type="button"></button>
+                    </p>
+                  </li>
+                  <li class="filter__item">
+                    <label class="filter__label filter__label--contrast">
+                      <input class="visually-hidden" type="radio" name="filter">
+                      <img src="img/contrast.svg" width="33" height="33" alt="">
+                    </label>
+                    <p class="filter__bar">
+                      <button class="filter__pin filter__pin--contrast" type="button"></button>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="preview__actions">
+                <button class="preview__button button button--active" type="submit">Запостить</button>
+                <button class="preview__button button" type="reset" disabled>Отмена</button>
+              </div>
+            </div>
+          </form>
+        </section>
+
     </main>
 
     <footer class="footer">
-      <a class="footer__logo" href="">
-        <img src="img/logo-footer.svg" alt="Pink">
-      </a>
-      <ul class="socials">
-        <li class="socials__item">
-          <a class="socials__link" href="" aria-label="twitter"></a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="" aria-label="facebook"></a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="" aria-label="youtube"></a>
-        </li>
-      </ul>
-      <p class="copyrigth">
-        Разработано
-        <a class="copyrigth" href="">
-          <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+      <div class="footer__wrapper container">
+        <a class="footer__logo" href="">
+          <picture>
+            <source media="(min-width: 1060px)" srcset="img/logo-footer-desktop.svg">
+            <img src="img/logo-footer.svg" alt="Pink">
+          </picture>
         </a>
-      </p>
+        <ul class="footer__socials socials">
+          <li class="socials__item">
+            <a class="socials__link socials__link--twitter" href="" aria-label="twitter"></a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--facebook" href="" aria-label="facebook"></a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--youtube" href="" aria-label="youtube"></a>
+          </li>
+        </ul>
+        <p class="footer__copyrigth">
+          Разработано
+          <a class="footer__copyright-link" href="">
+            <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+          </a>
+        </p>
+      </div>
     </footer>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
