@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="header">
@@ -12,11 +12,9 @@
         <div class="nav__wrapper">
           <div class="nav__toggle-wrapper">
             <a class="nav__logo">
-              <picture>
-                <source media="(min-width: 1060px)" srcset="img/pink-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/pink-tablet.svg">
-                <img class="nav__logo-image" src="img/pink.svg" width="74" height="23" alt="Pink">
-              </picture>
+              <svg class="nav__logo-image" width="147" height="40" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#logo"></use>
+              </svg>
             </a>
             <button class="nav__toggle" aria-label="Меню"></button>
           </div>
@@ -272,6 +270,6 @@
         </p>
       </div>
     </footer>
-    <script src="./js/scripts.js"></script>
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>
