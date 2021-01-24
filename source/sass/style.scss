@@ -8,6 +8,8 @@
 @import "./scaffolding";
 
 
+// Index Page
+
 // Blocks
 
 // Header
@@ -56,3 +58,14 @@
 
 // Form
 @import "./blocks/form";
+
+
+// Inner Pages
+
+// Catalog Page
+@import "./blocks/catalog";
+@import "./blocks/posts";
+@import "./blocks/post";
+@import "./blocks/upload";
+@import "./blocks/filter";
+@import "./blocks/preview";

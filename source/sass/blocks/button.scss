@@ -15,6 +15,17 @@
   border-radius: 55px;
   cursor: pointer;
 
+  &--active {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+
+  &:disabled {
+    color: $main-color;
+    border-color: $main-color;
+    opacity: 0.1;
+  }
+
   &:hover,
   &:focus {
     color: $accent-color;

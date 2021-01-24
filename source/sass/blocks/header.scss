@@ -12,3 +12,34 @@
     background-image: url("../../img/back-desktop.jpg");
   }
 }
+
+.header__wrapper {
+  padding-top: 27px;
+  padding-right: 20px;
+  padding-left: 20px;
+  min-height: 170px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+    min-height: 330px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 59px;
+    min-height: 284px;
+  }
+}
+
+.header__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 33px;
+  text-align: center;
+  color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
