@@ -6,9 +6,14 @@
 
 .page {
   box-sizing: border-box;
+  height: 100%;
 }
 
 .page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  grid-template-columns: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   min-width: $mobile-width;
