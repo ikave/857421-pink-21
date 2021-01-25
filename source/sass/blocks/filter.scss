@@ -12,10 +12,10 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 23px;
   padding: 0;
-  padding-bottom: 40px;
+  padding-bottom: 42px;
   padding-left: 37px;
   list-style: none;
 
@@ -36,8 +36,6 @@
     align-items: center;
     width: 100%;
     height: 73px;
-    padding-top: 20px;
-    padding-bottom: 20px;
     padding-right: 18px;
     border-bottom: 1px solid rgba($main-color, 0.1);
 
@@ -45,11 +43,65 @@
       margin-right: 0;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 30px;
+  }
 }
 
 .filter__label {
   @media (min-width: $tablet-width) {
     min-width: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 91px;
+  }
+}
+
+.filter__image {
+  position: relative;
+  fill: rgba($main-color, 0.3);
+
+  &--active {
+    fill: $accent-color;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $main-color;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    &--crop {
+      top: 8px;
+      left: 4px;
+      width: 22px;
+      height: 22px;
+    }
+
+    &--fill {
+      top: 9px;
+      left: 3px;
+      width: 24px;
+      height: 22px;
+    }
+
+    &--contrast {
+      top: 4px;
+      left: 8px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 5px;
+
+    &--contrast {
+      top: 4px;
+      left: 6px;
+    }
   }
 }
 
@@ -96,10 +148,6 @@
   border-radius: 50%;
   background-color: $basic-white;
 
-  @media (min-width: $tablet-width) {
-    top: -6px;
-  }
-
   &--cut {
     left: 80%;
   }
@@ -110,5 +158,39 @@
 
   &--contrast {
     left: 50%;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: -6px;
+
+    &--cut {
+      left: 72%;
+    }
+
+    &--fill {
+      left: 12%;
+    }
+
+    &--contrast {
+      left: 48%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--cut {
+      left: 24%;
+    }
+
+    &--fill {
+      left: 85%;
+    }
+
+    &--contrast {
+      left: 56%;
+    }
+  }
+
+  &:active {
+    background-color: $accent-color;
   }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page no-js" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,7 +42,7 @@
               <a class="menu__link" href="form.html">Конкурс</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="">HTML Academy</a>
+              <a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -60,9 +60,12 @@
           <div class="post post--day">
             <a href="">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg">
-                <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg">
-                <img class="post__img post__img--day" src="img/panorama.jpg" alt="">
+                <source type="image/webp" media="(min-width: 1060px)" srcset="img/panorama-desktop.webp 1x, img/panorama-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet.webp 1x, img/panorama-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/panorama.webp 1x, img/panorama@2x.webp 2x">
+                <source media="(min-width: 1060px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                <img class="post__img post__img--day" src="img/panorama.jpg" srcset="img/panorama@2x.jpg 2x" alt="Панорама дня">
               </picture>
             </a>
             <div class="container">
@@ -71,7 +74,14 @@
                 <p class="post__description">
                   Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
                 </p>
-                <p class="post__likes">Нравится: <span class="post__likes-count">215</span></p>
+                <p class="post__likes">
+                  <button class="post__heart">
+                    <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                  Нравится:&nbsp;<span class="post__likes-count">215</span>
+                </p>
               </blockquote>
             </div>
           </div>
@@ -80,9 +90,12 @@
               <li class="posts__item post">
                 <a href="">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg">
-                    <img class="post__img" src="img/photo-1-mobile.jpg" alt="">
+                    <source type="image/webp" media="(min-width: 1060px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
+                    <source media="(min-width: 1060px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                    <img class="post__img" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Процесс съемки белого автомобиля">
                   </picture>
                 </a>
                 <blockquote class="post__comment">
@@ -90,15 +103,24 @@
                   <p class="post__description">
                     Вчера он на луну летал, сегодня в руки к нам попал.
                   </p>
-                  <p class="post__likes">Нравится: <span class="post__likes-count">356</span></p>
+                  <p class="post__likes">
+                    <button class="post__heart">
+                      <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/sprite.svg#heart"></use>
+                      </svg>
+                    </button>
+                    Нравится:&nbsp;<span class="post__likes-count">356</span></p>
                 </blockquote>
               </li>
               <li class="posts__item post">
                 <a href="">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg">
-                    <img class="post__img" src="img/photo-2-mobile.jpg" alt="">
+                    <source type="image/webp" media="(min-width: 1060px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
+                    <source media="(min-width: 1060px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                    <img class="post__img" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Барабанная установка">
                   </picture>
                 </a>
                 <blockquote class="post__comment">
@@ -106,15 +128,24 @@
                   <p class="post__description">
                     Соседи будут рады!
                   </p>
-                  <p class="post__likes">Нравится: <span class="post__likes-count">666</span></p>
+                  <p class="post__likes">
+                    <button class="post__heart">
+                      <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/sprite.svg#heart"></use>
+                      </svg>
+                    </button>
+                    Нравится:&nbsp;<span class="post__likes-count">666</span></p>
                 </blockquote>
               </li>
               <li class="posts__item post">
                 <a href="">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg">
-                    <img class="post__img" src="img/photo-3-mobile.jpg" alt="">
+                    <source type="image/webp" media="(min-width: 1060px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
+                    <source media="(min-width: 1060px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                    <img class="post__img" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Стеклянный потолок с видом на небо">
                   </picture>
                 </a>
                 <blockquote class="post__comment">
@@ -122,15 +153,24 @@
                   <p class="post__description">
                     Здесь могла быть ваша цитата о высоком и вечном.
                   </p>
-                  <p class="post__likes">Нравится: <span class="post__likes-count">215</span></p>
+                  <p class="post__likes">
+                    <button class="post__heart">
+                      <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/sprite.svg#heart"></use>
+                      </svg>
+                    </button>
+                    Нравится:&nbsp;<span class="post__likes-count">215</span></p>
                 </blockquote>
               </li>
               <li class="posts__item post">
                 <a href="">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg">
-                    <img class="post__img" src="img/photo-4-mobile.jpg" alt="">
+                    <source type="image/webp" media="(min-width: 1060px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x">
+                    <source media="(min-width: 1060px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                    <img class="post__img" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Ярморка Кубанская бахча">
                   </picture>
                 </a>
                 <blockquote class="post__comment">
@@ -138,15 +178,24 @@
                   <p class="post__description">
                     Самая кубанская в мире!
                   </p>
-                  <p class="post__likes">Нравится: <span class="post__likes-count">4</span></p>
+                  <p class="post__likes">
+                    <button class="post__heart">
+                      <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/sprite.svg#heart"></use>
+                      </svg>
+                    </button>
+                    Нравится:&nbsp;<span class="post__likes-count">4</span></p>
                 </blockquote>
               </li>
               <li class="posts__item post">
                 <a href="">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg">
-                    <img class="post__img" src="img/photo-5-mobile.jpg" alt="">
+                    <source type="image/webp" media="(min-width: 1060px)" srcset="img/photo-5-desktop.webp 1x, img/photo-5-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-5-tablet.webp 1x, img/photo-5-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-5-mobile.webp 1x, img/photo-5-mobile@2x.webp 2x">
+                    <source media="(min-width: 1060px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+                    <img class="post__img" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Мужчина сидит над обрывом скалы">
                   </picture>
                 </a>
                 <blockquote class="post__comment">
@@ -154,15 +203,24 @@
                   <p class="post__description">
                     Где снег-то?
                   </p>
-                  <p class="post__likes">Нравится: <span class="post__likes-count">150</span></p>
+                  <p class="post__likes">
+                    <button class="post__heart">
+                      <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/sprite.svg#heart"></use>
+                      </svg>
+                    </button>
+                    Нравится:&nbsp;<span class="post__likes-count">150</span></p>
                 </blockquote>
               </li>
               <li class="posts__item post">
                 <a href="">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg">
-                    <img class="post__img" src="img/photo-6-mobile.jpg" alt="">
+                    <source type="image/webp" media="(min-width: 1060px)" srcset="img/photo-6-desktop.webp 1x, img/photo-6-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-6-tablet.webp 1x, img/photo-6-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-6-mobile.webp 1x, img/photo-6-mobile@2x.webp 2x">
+                    <source media="(min-width: 1060px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+                    <img class="post__img" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Вид на крыло самолета во время полета, закат">
                   </picture>
                 </a>
                 <blockquote class="post__comment">
@@ -170,7 +228,13 @@
                   <p class="post__description">
                     Всем GM и взаимные лайки!
                   </p>
-                  <p class="post__likes">Нравится: <span class="post__likes-count">2560</span></p>
+                  <p class="post__likes">
+                    <button class="post__heart">
+                      <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/sprite.svg#heart"></use>
+                      </svg>
+                    </button>
+                    Нравится:&nbsp;<span class="post__likes-count">2560</span></p>
                 </blockquote>
               </li>
             </ul>
@@ -183,8 +247,10 @@
           <form class="upload__form preview" action="https://echo.htmlacademy.ru" method="POST">
             <div class="preview__image-wrapper">
               <picture>
-                <source media="(min-width: 660px)" srcset="img/photo-7-tablet.jpg">
-                <img class="preview__img" src="img/photo-7-mobile.jpg" alt="">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-7-tablet.webp 1x, img/photo-7-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-7-mobile.webp 1x, img/photo-7-mobile@2x.webp 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-7-tablet.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
+                <img class="post__img" src="img/photo-7-mobile.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="Предпросмотр пользовательской фотограии">
               </picture>
             </div>
             <div class="preview__filter">
@@ -193,7 +259,9 @@
                   <li class="filter__item">
                     <label class="filter__label filter__label--cut">
                       <input class="visually-hidden" type="radio" name="filter" checked>
-                      <img src="img/crop.svg" width="44" height="44" alt="">
+                      <svg class="filter__image filter__image--crop filter__image--active" width="44" height="44" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/sprite.svg#crop"></use>
+                      </svg>
                     </label>
                     <p class="filter__bar filter__bar--active">
                       <button class="filter__pin filter__pin--cut" type="button"></button>
@@ -202,7 +270,9 @@
                   <li class="filter__item">
                     <label class="filter__label filter__label--fill">
                       <input class="visually-hidden" type="radio" name="filter">
-                      <img src="img/fill.svg" width="48" height="43" alt="">
+                      <svg class="filter__image filter__image--fill" width="48" height="43" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/sprite.svg#fill"></use>
+                      </svg>
                     </label>
                     <p class="filter__bar">
                       <button class="filter__pin filter__pin--fill" type="button"></button>
@@ -211,7 +281,9 @@
                   <li class="filter__item">
                     <label class="filter__label filter__label--contrast">
                       <input class="visually-hidden" type="radio" name="filter">
-                      <img src="img/contrast.svg" width="33" height="33" alt="">
+                      <svg class="filter__image filter__image--contrast" width="33" height="33" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/sprite.svg#contrast"></use>
+                      </svg>
                     </label>
                     <p class="filter__bar">
                       <button class="filter__pin filter__pin--contrast" type="button"></button>
@@ -221,7 +293,7 @@
               </div>
               <div class="preview__actions">
                 <button class="preview__button button button--active" type="submit">Запостить</button>
-                <button class="preview__button button" type="reset" disabled>Отмена</button>
+                <button class="preview__button button button--reset" type="reset">Отмена</button>
               </div>
             </div>
           </form>
@@ -232,26 +304,42 @@
     <footer class="footer">
       <div class="footer__wrapper container">
         <a class="footer__logo" href="">
-          <picture>
-            <source media="(min-width: 1060px)" srcset="img/logo-footer-desktop.svg">
-            <img src="img/logo-footer.svg" alt="Pink">
-          </picture>
+          <svg class="footer__logo-image footer__logo-image--mobile" width="145" height="40" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
+          </svg>
+          <svg class="footer__logo-image footer__logo-image--desktop" width="147" height="40" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#logo-footer-desktop"></use>
+          </svg>
         </a>
         <ul class="footer__socials socials">
           <li class="socials__item">
-            <a class="socials__link socials__link--twitter" href="" aria-label="twitter"></a>
+            <a class="socials__link" href="" aria-label="twitter">
+              <svg width="18" height="14" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--facebook" href="" aria-label="facebook"></a>
+            <a class="socials__link" href="" aria-label="facebook">
+              <svg width="9" height="18" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--youtube" href="" aria-label="youtube"></a>
+            <a class="socials__link" href="" aria-label="youtube">
+              <svg width="20" height="13" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
           </li>
         </ul>
         <p class="footer__copyrigth">
           Разработано
-          <a class="footer__copyright-link" href="">
-            <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="footer__copyright-logo" width="27" height="34" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
           </a>
         </p>
       </div>
