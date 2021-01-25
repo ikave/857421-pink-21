@@ -1,3 +1,9 @@
+.no-js {
+  & .menu {
+    display: block;
+  }
+}
+
 .menu {
   display: none;
   margin-top: 0;
