@@ -51,9 +51,12 @@
         <h2 class="visually-hidden">Скачайте приложение Pink для вашего устройства</h2>
         <p class="hero__tagline">Взгляните на&nbsp;жизнь иначе!</p>
         <picture>
-          <source media="(min-width: 1060px)" srcset="img/download-desktop.png">
-          <source media="(min-width: 660px)" srcset="img/download-tablet.png">
-          <img class="hero__image" src="./img/download-mobile.png" alt="">
+          <source type="image/webp" media="(min-width: 1060px)" srcset="img/download-desktop.webp 1x, img/download-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/download-tablet.webp 1x, img/download-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/download-mobile.webp 1x, img/download-mobile@2x.webp 2x">
+          <source media="(min-width: 1060px)" srcset="img/download-desktop.png 1x, img/download-desktop@2x.png 2x">
+          <source media="(min-width: 660px)" srcset="img/download-tablet.png 1x, img/download-tablet@2x.png 2x">
+          <img class="hero__image" src="img/download-mobile.png" srcset="img/download-mobile@2x.png 2x" alt="Телефон в руке">
         </picture>
         <div class="hero__download">
           <div class="download">
@@ -111,8 +114,10 @@
               </li>
             </ul>
             <picture>
-              <source media="(min-width: 660px)" srcset="img/advantages-tablet.png">
-              <img class="advantages__image" src="./img/advantages-mobile.png" width="157" height="320" alt="Демонстрация приложения">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/advantages-tablet.webp 1x, img/advantages-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/advantages-mobile.webp 1x, img/advantages-mobile@2x.webp 2x">
+              <source media="(min-width: 660px)" srcset="img/advantages-tablet.png 1x, img/advantages-tablet@2x.png 2x">
+              <img class="advantages__image" src="img/advantages-mobile.png" srcset="img/advantages-mobile@2x.png 2x" alt="Демонстрация приложения">
             </picture>
           </div>
         </div>
@@ -255,9 +260,12 @@
       <section class="map">
         <h2 class="visually-hidden">Схема проезда</h2>
         <picture>
-          <source media="(min-width: 1060px)" srcset="img/map-desktop.jpg">
-          <source media="(min-width: 660px)" srcset="img/map-tablet.jpg">
-          <img class="map__image" src="img/map.jpg" width="100%" alt="г. Санкт-Петербург ул. Большая Конюшенная, 19/8">
+          <source type="image/webp" media="(min-width: 1060px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x">
+          <source media="(min-width: 1060px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <img class="map__image" src="img/map.jpg" srcset="img/map@2x.jpg 2x" alt="г. Санкт-Петербург ул. Большая Конюшенная, 19/8">
         </picture>
         <iframe class="map__yandex" src="https://yandex.ru/map-widget/v1/-/CCUEAOTSPD" width="560" height="400"></iframe>
       </section>

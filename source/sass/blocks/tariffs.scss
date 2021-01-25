@@ -143,11 +143,11 @@
   }
 
   &--on::before {
-    background-image: url("../../img/check.svg");
+    background-image: url("../img/icons/check.svg");
   }
 
   &--off::before {
-    background-image: url("../../img/no-check.svg");
+    background-image: url("../img/icons/no-check.svg");
   }
 
   @media (min-width: $tablet-width) {

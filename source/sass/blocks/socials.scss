@@ -6,6 +6,11 @@
   align-items: center;
   flex-wrap: wrap;
   width: 177px;
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    margin-left: 10px;
+  }
 }
 
 .socials__item {
