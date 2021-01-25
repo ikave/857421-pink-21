@@ -33,6 +33,10 @@
     background-color: $main-color;
     border-bottom: 1px solid $basic-black;
   }
+
+  & .nav__toggle {
+    display: none;
+  }
 }
 
 .nav__toggle-wrapper {
@@ -74,12 +78,6 @@
       fill: $basic-white;
       opacity: 0.3;
     }
-  }
-}
-
-.no-js {
-  & .nav__toggle {
-    display: none;
   }
 }
 
