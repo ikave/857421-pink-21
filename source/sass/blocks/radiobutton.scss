@@ -7,6 +7,7 @@
   border: 2px solid $basic-gray-dark;
   border-radius: 50%;
   background-color: $basic-white;
+  cursor: pointer;
 
   &::before {
     content: "";
