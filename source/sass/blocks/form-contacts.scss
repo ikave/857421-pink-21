@@ -44,7 +44,7 @@
     flex-direction: column-reverse;
     margin: 0;
 
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       top: 2px;
