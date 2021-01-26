@@ -1,0 +1,49 @@
+.checkbox__indicator {
+  display: inline-block;
+  width: 39px;
+  height: 39px;
+  margin: 0;
+  margin-right: 22px;
+  background-image: url("../img/icons/checkbox.svg");
+  background-repeat: no-repeat;
+}
+
+.checkbox__input {
+  &:hover,
+  &:focus {
+    & + .checkbox__indicator {
+      background-image: url("../img/icons/checkbox-hover.svg");
+    }
+  }
+
+  &:active {
+    & + .checkbox__indicator {
+      background-image: url("../img/icons/checkbox-focus.svg");
+    }
+  }
+
+  &:checked {
+    & + .checkbox__indicator {
+      background-image:
+        url("../img/icons/tick.svg"),
+        url("../img/icons/checkbox.svg");
+      background-position: center, center;
+      background-size: 22px 16px, 39px 39px;
+    }
+
+    &:hover,
+    &:focus {
+      & + .checkbox__indicator {
+        background-image:
+          url("../img/icons/tick.svg"),
+          url("../img/icons/checkbox-hover.svg");
+      }
+    }
+
+    &:active + .checkbox__indicator {
+      background-image:
+        url("../img/icons/tick.svg"),
+        url("../img/icons/checkbox-focus.svg");
+    }
+  }
+}

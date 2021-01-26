@@ -1,0 +1,43 @@
+.form-personal {
+  padding-top: 4px;
+  padding-bottom: 25px;
+  color: $accent-color;
+  background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    order: -3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 39px;
+    padding-bottom: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 435px;
+  }
+}
+
+.form-personal__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 52px;
+  }
+}
+
+.form-personal__text {
+  margin-bottom: 5px;
+  margin-left: 23px;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-right: 18px;
+  }
+}
