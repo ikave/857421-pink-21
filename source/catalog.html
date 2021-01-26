@@ -251,7 +251,7 @@
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-7-tablet.webp 1x, img/photo-7-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/photo-7-mobile.webp 1x, img/photo-7-mobile@2x.webp 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-7-tablet.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
-                <img class="post__img" src="img/photo-7-mobile.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="Предпросмотр пользовательской фотограии">
+                <img src="img/photo-7-mobile.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="Предпросмотр пользовательской фотограии">
               </picture>
             </div>
             <div class="preview__filter">
@@ -259,7 +259,7 @@
                 <ul class="filter__list">
                   <li class="filter__item">
                     <label class="filter__label filter__label--cut">
-                      <input class="visually-hidden" type="radio" name="filter" checked>
+                      <input class="visually-hidden" type="checkbox" name="cut" checked>
                       <svg class="filter__image filter__image--crop filter__image--active" width="44" height="44" xmlns="http://www.w3.org/2000/svg">
                         <use xlink:href="img/sprite.svg#crop"></use>
                       </svg>
@@ -270,7 +270,7 @@
                   </li>
                   <li class="filter__item">
                     <label class="filter__label filter__label--fill">
-                      <input class="visually-hidden" type="radio" name="filter">
+                      <input class="visually-hidden" type="checkbox" name="fill">
                       <svg class="filter__image filter__image--fill" width="48" height="43" xmlns="http://www.w3.org/2000/svg">
                         <use xlink:href="img/sprite.svg#fill"></use>
                       </svg>
@@ -281,7 +281,7 @@
                   </li>
                   <li class="filter__item">
                     <label class="filter__label filter__label--contrast">
-                      <input class="visually-hidden" type="radio" name="filter">
+                      <input class="visually-hidden" type="checkbox" name="contrast">
                       <svg class="filter__image filter__image--contrast" width="33" height="33" xmlns="http://www.w3.org/2000/svg">
                         <use xlink:href="img/sprite.svg#contrast"></use>
                       </svg>

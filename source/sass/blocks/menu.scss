@@ -1,6 +1,8 @@
 .no-js {
   & .menu {
-    display: block;
+    @media (max-width: $tablet-width-only) {
+      display: block;
+    }
   }
 }
 

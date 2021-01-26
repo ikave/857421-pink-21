@@ -28,17 +28,6 @@
   }
 }
 
-.no-js {
-  & .nav__toggle-wrapper {
-    background-color: $main-color;
-    border-bottom: 1px solid $basic-black;
-  }
-
-  & .nav__toggle {
-    display: none;
-  }
-}
-
 .nav__toggle-wrapper {
   display: flex;
   justify-content: space-between;
@@ -122,5 +111,26 @@
 .nav__menu {
   @media (min-width: $desktop-width) {
     margin-top: 13px;
+  }
+}
+
+.no-js {
+  & .nav {
+    @media (max-width: $tablet-width-only) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  & .nav__toggle-wrapper {
+    @media (max-width: $tablet-width-only) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background-color: $main-color;
+      border-bottom: 1px solid $basic-black;
+    }
+  }
+
+  & .nav__toggle {
+    display: none;
   }
 }

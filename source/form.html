@@ -54,6 +54,7 @@
     </header>
     <main>
       <section class="contest">
+        <h2 class="visually-hidden">Форма конкуса</h2>
         <p class="contest__description">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           <span class="contest__description-prompt">Пожалуйста, заполните форму ниже:</span>
@@ -115,11 +116,11 @@
               <legend class="form__legend form-contacts__title">контактная информация</legend>
               <label class="form__label form-contacts__item form-contacts__item--phone">
                 <span class="form-contacts__text">Номер телефона</span>
-                <input class="form__input form-contacts__input" type="tel" placeholder="Номер, пожалуйста">
+                <input class="form__input form-contacts__input" type="tel" placeholder="Номер, пожалуйста" required>
               </label>
               <label class="form__label form-contacts__item form-contacts__item--mail">
                 <span class="form-contacts__text">Адрес почты</span>
-                <input class="form__input form-contacts__input" type="email" placeholder="Введите почту *">
+                <input class="form__input form-contacts__input" type="email" placeholder="Введите почту *" required>
               </label>
             </fieldset>
 
@@ -149,7 +150,7 @@
             </fieldset>
             <div class="form__submit-wrapper">
               <button class="form__button button button--success" type="submit">Отправить форму</button>
-              <p class="form__required"><span class="form__required--star">*</span> — обязательные поля</p>
+              <p class="form__required"><span class="form__required form__required--star">*</span> — обязательные поля</p>
             </div>
           </div>
         </form>
