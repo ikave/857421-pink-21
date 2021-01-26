@@ -37,3 +37,10 @@
     padding-left: 0;
   }
 }
+
+.form-achievements__title {
+  @media (min-width: $tablet-width) {
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+}

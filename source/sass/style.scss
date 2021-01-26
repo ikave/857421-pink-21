@@ -18,48 +18,25 @@
 @import "./blocks/nav";
 @import "./blocks/menu";
 @import "./blocks/hero";
-
-// Main
-@import "./blocks/advantages-list";
-@import "./blocks/slider";
-@import "./blocks/map";
-@import "./blocks/reviews";
-@import "./blocks/link";
-
-// Button
 @import "./blocks/button";
-
-// Download
 @import "./blocks/download";
 
-// Advantages
+// Main
 @import "./blocks/advantages";
-
-// Trick
+@import "./blocks/advantages-list";
 @import "./blocks/trick";
-
-// Review
+@import "./blocks/slider";
+@import "./blocks/reviews";
 @import "./blocks/review";
-
-// Price
 @import "./blocks/price";
-
-// Tariffs
 @import "./blocks/tariffs";
-
-// Contacts
 @import "./blocks/contacts";
+@import "./blocks/link";
+@import "./blocks/map";
 
 // Footer
 @import "./blocks/footer";
 @import "./blocks/socials";
-
-// Contest
-@import "./blocks/contest";
-
-// Form
-@import "./blocks/form";
-
 
 // Inner Pages
 
@@ -73,6 +50,8 @@
 
 
 // Form Page
+@import "./blocks/contest";
+@import "./blocks/form";
 @import "./blocks/form-personal";
 @import "./blocks/form-achievements";
 @import "./blocks/form-contacts";
@@ -80,3 +59,4 @@
 @import "./blocks/form-review";
 @import "./blocks/checkbox";
 @import "./blocks/radiobutton";
+@import "./blocks/popup";

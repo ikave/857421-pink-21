@@ -65,7 +65,7 @@
     font-weight: 400;
     line-height: 18px;
 
-    &:active {
+    &[href]:active {
       color: rgba($basic-white, 0.3);
     }
 

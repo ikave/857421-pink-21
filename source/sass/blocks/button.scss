@@ -13,6 +13,7 @@
   text-align: center;
   border: 3px solid $basic-white;
   border-radius: 55px;
+  background-color: $basic-gray;
   cursor: pointer;
 
   &:disabled {
@@ -64,6 +65,34 @@
       color: rgba($basic-white, 0.3);
       background-color: $main-color;
       opacity: 0.3;
+    }
+  }
+
+  &--success {
+    min-height: 63px;
+    border-color: $success-color;
+    border-radius: 3px;
+    background-color: $success-color;
+
+    &:hover,
+    &:focus {
+      color: $basic-white;
+      border-color: $success-color-dark;
+      background-color: $success-color-dark;
+    }
+
+    &:active {
+      color: rgba($basic-white, 0.3);
+    }
+
+    &:disabled {
+      background-color: $basic-gray-dark;
+      cursor: initial;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+      padding: 0 58px;
     }
   }
 

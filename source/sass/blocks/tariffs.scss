@@ -91,11 +91,13 @@
 
 .tariffs__function {
   padding: 20px 20px;
-  border: 2px solid $basic-gray;
+  border: 2px solid $basic-gray-dark;
   color: $main-color;
 
   &--empty {
     background-color: $basic-gray;
+    border-top-color: transparent;
+    border-left-color: transparent;
   }
 
   @media (max-width: $mobile-width-only) {
