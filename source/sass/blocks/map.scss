@@ -3,7 +3,14 @@
   overflow-y: hidden;
   width: 100%;
   height: 200px;
+  background-image: url("../../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 
+  @media (min-resolution: 144dpi) , (min-resolution: 2dppx) {
+    background-image: url("../../img/map@2x.jpg");
+  }
 
   &::before {
     content: "";
@@ -27,24 +34,26 @@
   @media (min-width: $tablet-width) {
     height: 374px;
     margin-top: -34px;
+    background-image: url("../../img/map-tablet.jpg");
+
+    @media (min-resolution: 144dpi) , (min-resolution: 2dppx) {
+      background-image: url("../../img/map-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     height: 502px;
+    margin-top: -37px;
+    background-image: url("../../img/map-desktop.jpg");
+
+    @media (min-resolution: 144dpi) , (min-resolution: 2dppx) {
+      background-image: url("../../img/map-desktop@2x.jpg");
+    }
   }
 }
 
-.map__yandex {
+.map__google {
   width: 100%;
   height: 100%;
   border: none;
-}
-
-.map__image {
-  position: absolute;
-  display: block;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
 }
