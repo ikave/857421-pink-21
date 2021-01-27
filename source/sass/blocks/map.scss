@@ -24,21 +24,6 @@
     }
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 57%;
-    width: 36px;
-    height: 36px;
-    background-image: url("../img/icons/map-marker.svg");
-    transform: translate(-50%, -50%);
-
-    @media (min-width: $tablet-width) {
-      top: 55%;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     height: 374px;
     margin-top: -34px;
