@@ -90,12 +90,6 @@
       & .post__likes {
         display: flex;
         width: auto;
-
-        & .post__heart {
-          order: 1;
-          margin-right: 0;
-          margin-left: 16px;
-        }
       }
     }
   }
@@ -160,5 +154,9 @@
     order: 1;
     margin-left: auto;
     margin-right: 0;
+
+    &--day {
+      margin-left: 16px;
+    }
   }
 }
