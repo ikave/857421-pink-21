@@ -32,7 +32,15 @@
     background-repeat: no-repeat;
   }
 
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
   @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    margin: 0 auto;
+    
     &::before {
       width: 298px;
       height: 345px;

@@ -3,6 +3,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
   }
 }
 
@@ -31,6 +37,11 @@
   }
 }
 
+.preview__image {
+  display: block;
+  margin: 0 auto;
+}
+
 .preview__actions {
   position: relative;
   padding-top: 39px;
@@ -50,7 +61,6 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     padding-right: 13px;
-    padding-bottom: 10px;
     padding-left: 2px;
 
     &::before {

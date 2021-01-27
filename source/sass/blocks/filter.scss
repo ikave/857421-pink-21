@@ -1,5 +1,5 @@
 .filter {
-  padding-top: 32px;
+  padding-top: 42px;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -11,7 +11,9 @@
 .filter__list {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  width: 280px;
   margin: 0 auto;
   margin-bottom: 23px;
   padding: 0;
@@ -23,6 +25,10 @@
     flex-direction: column;
     padding-left: 0;
     padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
   }
 }
 

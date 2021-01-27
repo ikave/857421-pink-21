@@ -1,5 +1,5 @@
 .upload {
-  max-width: 940px;
+  width: 100%;
   margin: 0 auto;
   padding: 20px 0 41px;
   background-color: $basic-gray;
@@ -8,10 +8,11 @@
     padding-top: 39px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 44px;
+    padding-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 940px;
     margin-bottom: 30px;
     padding-left: 80px;
     padding-right: 60px;
