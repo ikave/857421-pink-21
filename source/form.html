@@ -82,36 +82,32 @@
             <fieldset class="form__fieldset form-achievements">
               <legend class="form__legend form-achievements__title">Ваши безбашенные
                 достижения&nbsp;в&nbsp;путешествии</legend>
-                <label class="form__label form-achievements__item checkbox">
-                  <input class="checkbox__input visually-hidden" name="shark" type="checkbox" checked>
-                  <span class="checkbox__indicator"></span>
-                  Сделал селфи с акулой
-                </label>
-                <label class="form__label form-achievements__item checkbox">
-                  <input class="checkbox__input visually-hidden" name="bitch" type="checkbox" checked>
-                  <span class="checkbox__indicator"></span>
-                  Обгорел на пляже
-                </label>
-                <label class="form__label form-achievements__item checkbox">
-                  <input class="checkbox__input visually-hidden" name="chack" type="checkbox">
-                  <span class="checkbox__indicator"></span>
-                  Видел Чака Норриса
-                </label>
-                <label class="form__label form-achievements__item checkbox">
-                  <input class="checkbox__input visually-hidden" name="souvenir" type="checkbox">
-                  <span class="checkbox__indicator"></span>
-                  Накупил сувениров
-                </label>
-                <label class="form__label form-achievements__item checkbox">
-                  <input class="checkbox__input visually-hidden" name="tower" type="checkbox" checked>
-                  <span class="checkbox__indicator"></span>
-                  Удержал башню
-                </label>
-                <label class="form__label form-achievements__item checkbox">
-                  <input class="checkbox__input visually-hidden" name="hotel" type="checkbox">
-                  <span class="checkbox__indicator"></span>
-                  Разгромил отель
-                </label>
+                <ul class="form-achievements__list">
+                  <li class="form-achievements__item">
+                    <input class="checkbox__input visually-hidden" id="shark" name="shark" type="checkbox" checked>
+                    <label class="form__label checkbox__indicator" for="shark">Сделал селфи с акулой</label>
+                  </li>
+                  <li class="form-achievements__item">
+                    <input class="checkbox__input visually-hidden" id="bitch" name="bitch" type="checkbox" checked>
+                    <label class="form__label checkbox__indicator" for="bitch">Обгорел на пляже</label>
+                  </li>
+                  <li class="form-achievements__item">
+                    <input class="checkbox__input visually-hidden" id="chack" name="chack" type="checkbox">
+                    <label class="form__label checkbox__indicator" for="chack">Видел Чака Норриса</label>
+                  </li>
+                  <li class="form-achievements__item">
+                    <input class="checkbox__input visually-hidden" id="souvenir" name="souvenir" type="checkbox">
+                    <label class="form__label checkbox__indicator" for="souvenir">Накупил сувениров</label>
+                  </li>
+                  <li class="form-achievements__item">
+                    <input class="checkbox__input visually-hidden" id="tower" name="tower" type="checkbox" checked>
+                    <label class="form__label checkbox__indicator" for="tower">Удержал башню</label>
+                  </li>
+                  <li class="form-achievements__item">
+                    <input class="checkbox__input visually-hidden" id="hotel" name="hotel" type="checkbox">
+                    <label class="form__label checkbox__indicator" for="hotel">Разгромил отель</label>
+                  </li>
+                </ul>
             </fieldset>
 
             <fieldset class="form__fieldset form-contacts">

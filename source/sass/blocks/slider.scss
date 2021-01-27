@@ -6,8 +6,20 @@
   }
 }
 
-.slider__controls {
+.slider__list {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+
+    & .slider__dots {
+      display: none;
+    }
+  }
 }
 
 .slider__dots {
@@ -20,28 +32,13 @@
 
 .slider__arrows {
   position: absolute;
+  top: 52%;
   display: none;
   width: 100%;
-  margin-top: -159px;
-
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-  }
-}
-
-.slider__list {
-  @media (min-width: $tablet-width) {
-    padding-top: 40px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 20px;
-
-    & .slider__dots {
-      display: none;
-    }
   }
 }
 

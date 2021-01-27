@@ -32,30 +32,16 @@ const styles = () => {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(sourcemap.write("."))
-    .pipe(rename("style.css"))
-    .pipe(gulp.dest("source/css"))
-    .pipe(sync.stream());
-}
-
-exports.styles = styles;
-
-const stylesMin = () => {
-  return gulp.src("source/css/style.css")
-    .pipe(plumber())
-    .pipe(sourcemap.init())
-    .pipe(postcss([
+      autoprefixer(),
       csso()
     ]))
     .pipe(sourcemap.write("."))
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
-exports.stylesMin = stylesMin;
+exports.styles = styles;
 
 // Scripts
 
@@ -76,8 +62,7 @@ const copy = () => {
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
     "source/img/**/*.{jpg,png,svg}",
-    "source/css/style.css",
-    "source/css/style.min.css"
+    "source/css/style.css"
   ],
     {
       base: "source"
@@ -156,7 +141,6 @@ const build = gulp.series(
   clean,
   gulp.parallel(
     styles,
-    stylesMin,
     html,
     sprite,
     scripts,
@@ -173,7 +157,6 @@ exports.default = gulp.series(
   clean,
   gulp.parallel(
     styles,
-    stylesMin,
     html,
     sprite,
     scripts,

@@ -1,50 +1,81 @@
 .checkbox__indicator {
-  display: inline-block;
-  width: 39px;
-  height: 39px;
-  margin: 0;
-  margin-right: 22px;
-  background-image: url("../img/icons/checkbox.svg");
-  background-repeat: no-repeat;
+  position: relative;
+  display: block;
+  padding-left: 60px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  font-size: 18px;
+  line-height: 30px;
   cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 39px;
+    height: 39px;
+    background-image: url("../../img/icons/checkbox.svg");
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 39px;
+    height: 39px;
+    background-image: url("../../img/icons/tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .checkbox__input {
   &:hover,
   &:focus {
-    & + .checkbox__indicator {
+    & + .checkbox__indicator::before {
       background-image: url("../img/icons/checkbox-hover.svg");
     }
   }
 
   &:active {
-    & + .checkbox__indicator {
+    & + .checkbox__indicator::before {
       background-image: url("../img/icons/checkbox-focus.svg");
     }
   }
 
   &:checked {
-    & + .checkbox__indicator {
-      background-image:
-        url("../img/icons/tick.svg"),
-        url("../img/icons/checkbox.svg");
-      background-position: center, center;
-      background-size: 22px 16px, 39px 39px;
+    & + .checkbox__indicator::before {
+      background-image: url("../img/icons/checkbox.svg");
+    }
+
+    & + .checkbox__indicator::after {
+      display: block;
+      background-image: url("../img/icons/tick.svg");
     }
 
     &:hover,
     &:focus {
-      & + .checkbox__indicator {
-        background-image:
-          url("../img/icons/tick.svg"),
-          url("../img/icons/checkbox-hover.svg");
+      & + .checkbox__indicator::before {
+        background-image: url("../img/icons/checkbox-hover.svg");
+      }
+
+      & + .checkbox__indicator::after {
+        background-image: url("../img/icons/tick.svg");
       }
     }
 
-    &:active + .checkbox__indicator {
-      background-image:
-        url("../img/icons/tick.svg"),
-        url("../img/icons/checkbox-focus.svg");
+    &:active {
+      & + .checkbox__indicator::before {
+        background-image: url("../img/icons/checkbox-focus.svg");
+      }
+
+      & + .checkbox__indicator::after {
+        background-image: url("../img/icons/tick.svg");
+      }
     }
   }
 }

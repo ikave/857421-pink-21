@@ -20,7 +20,9 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    max-width: 620px;
     padding-top: 14px;
     background-color: transparent;
   }
