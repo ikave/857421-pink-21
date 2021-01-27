@@ -16,6 +16,10 @@
   background-color: $basic-gray;
   cursor: pointer;
 
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+  }
+
   &:disabled {
     color: $main-color;
     border-color: $main-color;
@@ -72,6 +76,7 @@
     min-height: 63px;
     border-color: $success-color;
     border-radius: 3px;
+    text-transform: uppercase;
     background-color: $success-color;
 
     &:hover,
@@ -94,9 +99,9 @@
       width: auto;
       padding: 0 58px;
     }
-  }
 
-  @media (min-width: $desktop-width) {
-    font-size: 21px;
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+    }
   }
 }
