@@ -21,9 +21,18 @@
   }
 
   &:disabled {
-    color: $main-color;
-    border-color: $main-color;
-    opacity: 0.1;
+    color: $basic-white;
+    border-color: $basic-gray-dark;
+    background-color: $basic-gray-dark;
+    cursor: initial;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $basic-white;
+      border-color: $basic-gray-dark;
+      background-color: $basic-gray-dark;
+    }
   }
 
   &:hover,
@@ -88,11 +97,6 @@
 
     &:active {
       color: rgba($basic-white, 0.3);
-    }
-
-    &:disabled {
-      background-color: $basic-gray-dark;
-      cursor: initial;
     }
 
     @media (min-width: $tablet-width) {

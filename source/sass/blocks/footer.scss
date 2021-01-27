@@ -33,13 +33,16 @@
 
   &[href]:hover,
   &[href]:focus {
-    &-image {
+    & .footer__logo-image {
       fill: $accent-color;
     }
   }
 
   &[href]:active {
-    opacity: 0.3;
+    & .footer__logo-image {
+      fill: $main-color;
+      opacity: 0.3;
+    }
   }
 
   &-image {

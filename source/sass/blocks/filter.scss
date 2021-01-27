@@ -75,7 +75,7 @@
 
   &:hover,
   &:focus {
-    fill: $main-color;
+    fill: rgba($main-color, 0.5);
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
@@ -99,6 +99,10 @@
       width: 16px;
       height: 16px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    fill: $accent-color;
   }
 
   @media (min-width: $desktop-width) {
