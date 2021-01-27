@@ -44,7 +44,7 @@
     &--mood::before {
       background-image: url("../img/advantage-mood.png");
 
-      @media (min-resolution: 144dpi) , (min-resolution: 2dppx) {
+      @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
         background-image: url("../img/advantage-mood@2x.png");
       }
     }
@@ -52,7 +52,7 @@
     &--world::before {
       background-image: url("../../img/advantage-world.png");
 
-      @media (min-resolution: 144dpi) , (min-resolution: 2dppx) {
+      @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
         background-image: url("../img/advantage-world@2x.png");
       }
     }
@@ -60,7 +60,7 @@
     &--friends::before {
       background-image: url("../../img/advantage-friend.png");
 
-      @media (min-resolution: 144dpi) , (min-resolution: 2dppx) {
+      @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
         background-image: url("../img/advantage-friend@2x.png");
       }
     }
